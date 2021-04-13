@@ -38,7 +38,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:contentDescription="@string/todo"
-                    android:src="@drawable/gati" />
+                    android:src="@drawable/pedigree" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -53,14 +53,14 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/bevan"
-                        android:text="@string/descripcion1" />
+                        android:text="@string/descripcion1P" />
 
                     <TextView
                         android:id="@+id/textView4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/biryani_semibold"
-                        android:text="@string/p1" />
+                        android:text="@string/p1P" />
 
                     <Button
                         android:id="@+id/btnAdd"
@@ -89,7 +89,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:contentDescription="@string/todo"
-                    android:src="@drawable/gati2" />
+                    android:src="@drawable/pedigree2" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -104,14 +104,14 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/bevan"
-                        android:text="@string/descripcion2" />
+                        android:text="@string/descripcion2P" />
 
                     <TextView
                         android:id="@+id/textView5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/biryani_semibold"
-                        android:text="@string/p2" />
+                        android:text="@string/p2P" />
 
                     <Button
                         android:id="@+id/btnAdd1"
@@ -140,7 +140,7 @@
                     android:layout_height="wrap_content"
                     android:contentDescription="@string/todo"
                     android:layout_weight="1"
-                    android:src="@drawable/whiskas" />
+                    android:src="@drawable/dogui" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -155,14 +155,14 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/bevan"
-                        android:text="@string/descripcion3" />
+                        android:text="@string/descripcion3P" />
 
                     <TextView
                         android:id="@+id/textView9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/biryani_semibold"
-                        android:text="@string/p3" />
+                        android:text="@string/p3P" />
 
                     <Button
                         android:id="@+id/btnAdd2"
@@ -191,7 +191,7 @@
                     android:layout_height="wrap_content"
                     android:contentDescription="@string/todo"
                     android:layout_weight="1"
-                    android:src="@drawable/whiskas2" />
+                    android:src="@drawable/dogui2" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -206,14 +206,14 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/bevan"
-                        android:text="@string/descripcion4" />
+                        android:text="@string/descripcion4P" />
 
                     <TextView
                         android:id="@+id/textV"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/biryani_semibold"
-                        android:text="@string/p4" />
+                        android:text="@string/p4P" />
 
                     <Button
                         android:id="@+id/btnAdd3"
@@ -243,7 +243,7 @@
                     android:layout_height="wrap_content"
                     android:contentDescription="@string/todo"
                     android:layout_weight="1"
-                    android:src="@drawable/whiskas2" />
+                    android:src="@drawable/dogchow" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -258,14 +258,14 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/bevan"
-                        android:text="@string/descripcion5" />
+                        android:text="@string/descripcion5P" />
 
                     <TextView
                         android:id="@+id/textVq"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/biryani_semibold"
-                        android:text="@string/p5" />
+                        android:text="@string/p5P" />
                     <Button
                         android:id="@+id/btnAdd4"
                         android:layout_width="60dp"

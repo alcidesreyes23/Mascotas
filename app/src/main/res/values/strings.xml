@@ -12,14 +12,52 @@
     <string name="titulo2">Insectos</string>
     <string name="titulo3">Peces</string>
     <string name="titulo4">Mamiferos</string>
+    <!--DESCRIPCIONES COMIDA DE GATO-->
     <string name="descripcion1">COMIDA P/GATO SABOR PESCADO 20/1 KILOGRAMOS</string>
     <string name="descripcion2">GATI MAR Y TIERRA 1 LIBRA</string>
     <string name="descripcion3">WHISKAS GATITOS POLLO 1.4 KG</string>
     <string name="descripcion4">WHISKAS SUFLE GATITOS RES 85 G</string>
     <string name="descripcion5">COMIDA GATO FELIX PATE SALMON 156 GRAMOS</string>
+    <!--DESCRIPCIONES COMIDA DE PERRO-->
+    <string name="descripcion1P">COMIDA PARA PERRO PEDIGREE 4 KG</string>
+    <string name="descripcion2P">ALIMENTO PARA PERRO PEDIGREE ADULTO RES 100G</string>
+    <string name="descripcion3P">ALIMENTO PARA PERROS DOGUI SABOR A CARNE 2 KG</string>
+    <string name="descripcion4P">ALIMENTO PARA PERROS DOGUI CACHORRO 2 KG</string>
+    <string name="descripcion5P">ALIMENTO HUMEDO PERRO DOG CHOW TROZOS DE CARNE 374 GRAMOS</string>
+    <!--DESCRIPCIONES COMIDA DE AVES-->
+    <string name="descripcion1A">ALIMENTO P/CANARIO VITAMI 800GRS BIRDFOOD</string>
+    <string name="descripcion2A">ALIMENTO P/LORAS Y GUACAMAYAS 400 GRS BIRDFOOD</string>
+    <string name="descripcion3A">ALIMENTO P/LORAS Y GUACAMAYAS 800GRS BIRD FOOD</string>
+    <string name="descripcion4A">ALIMENTO P/PERICO VITAMINADO 400GRS BIRDFOOD</string>
+    <string name="descripcion5A">ALPISTE PURO BIRD FOOD 800G</string>
+    <!--DESCRIPCIONES COMIDA DE PECES-->
+    <string name="descripcion1Pe">ALIMENTO HOJUELAS PARA PECES 30 GRS PEPESQUITA</string>
+    <string name="descripcion2Pe">ALIMENTO P/PEZ FAUNA MIXTO 100 GRS</string>
+    <string name="descripcion3Pe">ALIMENTO P/PEZFAUNA MIXTO 68 GRS</string>
+    <string name="descripcion4Pe">ALIMENTO P/TORTUGA FAUNA 8 ONZ</string>
+    <string name="descripcion5Pe">ALIMENTO PARA PEZ PEPESQUITA 55 GRAMOS</string>
+    <!--PRECIOS COMIDA DE GATO-->
     <string name="p1">$3.70</string>
     <string name="p2">$2.00</string>
     <string name="p3">$7.13</string>
     <string name="p4">$0.98</string>
     <string name="p5">$1.49</string>
+    <!--PRECIOS COMIDA DE PERROS-->
+    <string name="p1P">$13.85</string>
+    <string name="p2P">$0.99</string>
+    <string name="p3P">$5.40</string>
+    <string name="p4P">$6.70</string>
+    <string name="p5P">$1.91</string>
+    <!--PRECIOS COMIDA DE AVES-->
+    <string name="p1A">$2.79</string>
+    <string name="p2A">$1.90</string>
+    <string name="p3A">$3.42</string>
+    <string name="p4A">$1.54</string>
+    <string name="p5A">$2.79</string>
+    <!--PRECIOS COMIDA DE PECES-->
+    <string name="p1Pe">$3.01</string>
+    <string name="p2Pe">$7.73</string>
+    <string name="p3Pe">$6.61</string>
+    <string name="p4Pe">$6.55</string>
+    <string name="p5Pe">$2.99</string>
 </resources>
