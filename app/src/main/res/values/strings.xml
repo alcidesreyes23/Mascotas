@@ -3,4 +3,23 @@
     <string name="created_by">Created By:</string>
     <string name="erick_alcides_reyes_avila">Erick Alcides Reyes Avila</string>
     <string name="ngel_sebasti_n_saravia_serpas">Ángel Sebastián Saravia Serpas</string>
+    <string name="venta_de_comida_para_mascotas">VENTA DE COMIDA PARA MASCOTAS</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="todo">Foto de animal</string>
+    <string name="title">Titulo</string>
+    <string name="content">Descripcion</string>
+    <string name="titulo1">Aves</string>
+    <string name="titulo2">Insectos</string>
+    <string name="titulo3">Peces</string>
+    <string name="titulo4">Mamiferos</string>
+    <string name="descripcion1">COMIDA P/GATO SABOR PESCADO 20/1 KILOGRAMOS</string>
+    <string name="descripcion2">GATI MAR Y TIERRA 1 LIBRA</string>
+    <string name="descripcion3">WHISKAS GATITOS POLLO 1.4 KG</string>
+    <string name="descripcion4">WHISKAS SUFLE GATITOS RES 85 G</string>
+    <string name="descripcion5">COMIDA GATO FELIX PATE SALMON 156 GRAMOS</string>
+    <string name="p1">$3.70</string>
+    <string name="p2">$2.00</string>
+    <string name="p3">$7.13</string>
+    <string name="p4">$0.98</string>
+    <string name="p5">$1.49</string>
 </resources>
