@@ -9,6 +9,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ListAdapter;
+import android.widget.ListView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -25,6 +30,10 @@ public class ComidaPerros extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+    private ListView mlsvComida;
+    private List<Modelo> mList = new ArrayList<>();
+    ListAdapter mAdapter;
 
     private Button btnAdd,btnAdd1,btnAdd2,btnAdd3,btnAdd4;
     public ComidaPerros() {
@@ -63,64 +72,17 @@ public class ComidaPerros extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_comida_perros, container, false);
 
-        btnAdd = view.findViewById(R.id.btnAdd);
-        btnAdd1 = view.findViewById(R.id.btnAdd1);
-        btnAdd2 = view.findViewById(R.id.btnAdd2);
-        btnAdd3 = view.findViewById(R.id.btnAdd3);
-        btnAdd4 = view.findViewById(R.id.btnAdd4);
+        mlsvComida = view.findViewById(R.id.lvLista);
 
-        btnAdd.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
-                builder.setTitle("Información");
-                builder.setMessage("Se ha añadido al carrito");
-                builder.setPositiveButton("Aceptar",null);
-                AlertDialog dialog = builder.create();
-                dialog.show();
-            }
-        });
-        btnAdd1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
-                builder.setTitle("Información");
-                builder.setMessage("Se ha añadido al carrito");
-                builder.setPositiveButton("Aceptar",null);
-                AlertDialog dialog = builder.create();
-                dialog.show();
-            }
-        });btnAdd2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
-                builder.setTitle("Información");
-                builder.setMessage("Se ha añadido al carrito");
-                builder.setPositiveButton("Aceptar",null);
-                AlertDialog dialog = builder.create();
-                dialog.show();
-            }
-        });btnAdd3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
-                builder.setTitle("Información");
-                builder.setMessage("Se ha añadido al carrito");
-                builder.setPositiveButton("Aceptar",null);
-                AlertDialog dialog = builder.create();
-                dialog.show();
-            }
-        });btnAdd4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
-                builder.setTitle("Información");
-                builder.setMessage("Se ha añadido al carrito");
-                builder.setPositiveButton("Aceptar",null);
-                AlertDialog dialog = builder.create();
-                dialog.show();
-            }
-        });
+        mList.removeAll(mList);
+        mList.add(new Modelo(getString(R.string.descripcion1P),getString(R.string.p1P),R.drawable.pedigree));
+        mList.add(new Modelo(getString(R.string.descripcion2P),getString(R.string.p2P),R.drawable.pedigree2));
+        mList.add(new Modelo(getString(R.string.descripcion3P),getString(R.string.p3P),R.drawable.dogui));
+        mList.add(new Modelo(getString(R.string.descripcion4P),getString(R.string.p4P),R.drawable.dogui2));
+        mList.add(new Modelo(getString(R.string.descripcion5P),getString(R.string.p5P),R.drawable.dogchow));
+
+        mAdapter = new Adapter(getContext(),R.layout.plantilla,mList);
+        mlsvComida.setAdapter(mAdapter);
         return view;
     }
 }

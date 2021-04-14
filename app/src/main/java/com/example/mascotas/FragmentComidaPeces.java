@@ -7,6 +7,11 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListAdapter;
+import android.widget.ListView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -23,7 +28,9 @@ public class FragmentComidaPeces extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-
+    private ListView mlsvComida;
+    private List<Modelo> mList = new ArrayList<>();
+    ListAdapter mAdapter;
     public FragmentComidaPeces() {
         // Required empty public constructor
     }
@@ -58,7 +65,19 @@ public class FragmentComidaPeces extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_comida_peces, container, false);
+        View view = inflater.inflate(R.layout.fragment_comida_peces, container, false);
+
+        mlsvComida = view.findViewById(R.id.lvLista);
+        mList.removeAll(mList);
+        mList.add(new Modelo(getString(R.string.descripcion1Pe),getString(R.string.p1Pe),R.drawable.peces));
+        mList.add(new Modelo(getString(R.string.descripcion2Pe),getString(R.string.p2Pe),R.drawable.peces2));
+        mList.add(new Modelo(getString(R.string.descripcion3Pe),getString(R.string.p3Pe),R.drawable.peces3));
+        mList.add(new Modelo(getString(R.string.descripcion4Pe),getString(R.string.p4Pe),R.drawable.peces4));
+        mList.add(new Modelo(getString(R.string.descripcion5Pe),getString(R.string.p5Pe),R.drawable.peces5));
+
+        mAdapter = new Adapter(getContext(),R.layout.plantilla,mList);
+        mlsvComida.setAdapter(mAdapter);
+
+        return view ;
     }
 }

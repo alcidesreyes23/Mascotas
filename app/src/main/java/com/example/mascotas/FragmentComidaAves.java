@@ -7,6 +7,11 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListAdapter;
+import android.widget.ListView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -23,6 +28,10 @@ public class FragmentComidaAves extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+    private ListView mlsvComida;
+    private List<Modelo> mList = new ArrayList<>();
+    ListAdapter mAdapter;
 
     public FragmentComidaAves() {
         // Required empty public constructor
@@ -58,7 +67,19 @@ public class FragmentComidaAves extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_comida_aves, container, false);
+        View view = inflater.inflate(R.layout.fragment_comida_aves, container, false);
+
+        mlsvComida = view.findViewById(R.id.lvLista);
+        mList.removeAll(mList);
+        mList.add(new Modelo(getString(R.string.descripcion1A),getString(R.string.p1A),R.drawable.birdfood));
+        mList.add(new Modelo(getString(R.string.descripcion2A),getString(R.string.p2A),R.drawable.birdfood2));
+        mList.add(new Modelo(getString(R.string.descripcion3A),getString(R.string.p3A),R.drawable.birdfood3));
+        mList.add(new Modelo(getString(R.string.descripcion4A),getString(R.string.p4A),R.drawable.birdfood4));
+        mList.add(new Modelo(getString(R.string.descripcion5A),getString(R.string.p5A),R.drawable.birdfood5));
+
+        mAdapter = new Adapter(getContext(),R.layout.plantilla,mList);
+        mlsvComida.setAdapter(mAdapter);
+
+        return view ;
     }
 }
