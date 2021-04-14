@@ -60,4 +60,9 @@
     <string name="p3Pe">$6.61</string>
     <string name="p4Pe">$6.55</string>
     <string name="p5Pe">$2.99</string>
+    <string name="pagar">Pagar</string>
+    <string name="gatos">Gatos</string>
+    <string name="perros">Perros</string>
+    <string name="peces">Peces</string>
+    <string name="aves">Aves</string>
 </resources>

@@ -27,11 +27,11 @@
 
         <Button
             android:id="@+id/button"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#FFFFFF"
-            android:text="Pagar"
+            android:text="@string/pagar"
             android:textAlignment="center"
             android:textColor="#000000"
             android:textSize="12sp"
@@ -52,7 +52,7 @@
 
             <LinearLayout
                 android:id="@+id/lnOpciones"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:background="#753131"
@@ -70,7 +70,7 @@
                     android:layout_margin="0dp"
                     android:background="@android:color/transparent"
                     android:onClick="onClick"
-                    android:text="Gatos" />
+                    android:text="@string/gatos" />
 
                 <Button
                     android:id="@+id/btnFragmentDos"
@@ -79,7 +79,7 @@
                     android:layout_margin="0dp"
                     android:background="@android:color/transparent"
                     android:onClick="onClick"
-                    android:text="Perros" />
+                    android:text="@string/perros" />
 
                 <Button
                     android:id="@+id/btnFragmentTres"
@@ -88,7 +88,7 @@
                     android:background="@android:color/transparent"
                     android:insetRight="5dp"
                     android:onClick="onClick"
-                    android:text="Peces" />
+                    android:text="@string/peces" />
 
                 <Button
                     android:id="@+id/btnFragmentCuatro"
@@ -97,7 +97,7 @@
                     android:background="@android:color/transparent"
                     android:insetRight="5dp"
                     android:onClick="onClick"
-                    android:text="Aves" />
+                    android:text="@string/aves" />
             </LinearLayout>
 
         </HorizontalScrollView>
