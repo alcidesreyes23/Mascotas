@@ -47,10 +47,11 @@
                 android:text="@string/p1P" />
 
             <Button
-                android:id="@+id/btnA"
+                android:id="@+id/btnAdd"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_gravity="end"
+                android:onClick="onClick"
                 android:background="@drawable/carrito" />
         </LinearLayout>
 

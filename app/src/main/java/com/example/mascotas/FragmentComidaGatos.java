@@ -1,6 +1,7 @@
 package com.example.mascotas;
 
 import android.app.AlertDialog;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -22,7 +23,7 @@ import java.util.List;
  * Use the {@link FragmentComidaGatos#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class FragmentComidaGatos extends Fragment implements AdapterView.OnItemClickListener{
+public class FragmentComidaGatos extends Fragment{
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -73,10 +74,8 @@ public class FragmentComidaGatos extends Fragment implements AdapterView.OnItemC
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_comida_gatos, container, false);
 
-
         mlsvComida = view.findViewById(R.id.lvLista);
 
-        mlsvComida.setOnItemClickListener(this);
         mList.removeAll(mList);
         mList.add(new Modelo(getString(R.string.descripcion1),getString(R.string.p1),R.drawable.gati));
         mList.add(new Modelo(getString(R.string.descripcion2),getString(R.string.p2),R.drawable.gati2));
@@ -88,10 +87,5 @@ public class FragmentComidaGatos extends Fragment implements AdapterView.OnItemC
         mlsvComida.setAdapter(mAdapter);
 
         return view ;
-    }
-
-    @Override
-    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        Toast.makeText(getContext(),"Elemento seleccionado: "+ position,Toast.LENGTH_SHORT).show();
     }
 }
