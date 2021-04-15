@@ -1,11 +1,14 @@
 package com.example.mascotas;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+
+import cn.pedant.SweetAlert.SweetAlertDialog;
 
 public class Menu extends AppCompatActivity{
 
@@ -13,6 +16,7 @@ public class Menu extends AppCompatActivity{
    FragmentComidaGatos comidaGatos;
    FragmentComidaAves comidaAves;
    FragmentComidaPeces comidaPeces;
+   Button btnPagar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +29,32 @@ public class Menu extends AppCompatActivity{
         comidaPeces = new FragmentComidaPeces();
 
        getSupportFragmentManager().beginTransaction().add(R.id.frlContenedor,comidaGatos).commit();
+       btnPagar = findViewById(R.id.btnPagar);
+       btnPagar.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               // 2. Mensaje de confirmacion
+               new SweetAlertDialog(Menu.this, SweetAlertDialog.WARNING_TYPE)
+                       .setTitleText("Compra")
+                       .setContentText("¿Desea procesar la compra?")
+                       .setConfirmText("Si")
+                       .setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
+                           @Override
+                           public void onClick(SweetAlertDialog sDialog) {
+                               Intent nextA = new Intent(Menu.this,Compra.class);
+                               startActivity(nextA);
+                               sDialog.dismissWithAnimation();
+                           }
+                       })
+                       .setCancelButton("No", new SweetAlertDialog.OnSweetClickListener() {
+                           @Override
+                           public void onClick(SweetAlertDialog sDialog) {
+                               sDialog.dismissWithAnimation();
+                           }
+                       })
+                       .show();
+           }
+       });
 
     }
 
@@ -50,12 +80,10 @@ public class Menu extends AppCompatActivity{
                 transaction.addToBackStack(null);
                 break;
             case R.id.btnAdd:
-                AlertDialog.Builder builder = new AlertDialog.Builder(this);
-                builder.setTitle("Informacion");
-                builder.setMessage("Usted esta usando un evento por medio de Fragment");
-                builder.setPositiveButton("Aceptar",null);
-                AlertDialog dialog = builder.create();
-                dialog.show();
+                new SweetAlertDialog(Menu.this)
+                        .setTitleText("¡Producto en carrito!")
+                        .setConfirmText("Aceptar")
+                        .show();
                 break;
         }
         transaction.commit();
